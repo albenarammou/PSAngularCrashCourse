@@ -57,10 +57,13 @@ export class WeightEntriesService {
   } */
 
   addEntry(entry: Entry) {
-/*     entry.id = getMaxId(this.entriesArray) + 1;
+    return this.http.post('http://localhost:3000/entries', entry)
+   
+    /*     entry.id = getMaxId(this.entriesArray) + 1;
     this.entriesArray = [...this.entriesArray, { ...entry}];
     this.sortEntries();
- */  } 
+   */ 
+  } 
 
 }
 
