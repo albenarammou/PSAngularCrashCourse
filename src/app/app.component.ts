@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IdentityService } from './identity.service';
 
 @Component({
   selector: 'hm-root',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor() {}
+  constructor(public identitySvc: IdentityService) {}
   
   ngOnInit() {
   }
